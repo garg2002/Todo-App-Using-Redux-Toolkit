@@ -62,7 +62,7 @@ const Todo = () => {
             <>
               <span className="text-black text-md mt-2">{index + 1}.</span>
               <p className="w-2/3  rounded-md text-black p-2">
-                {todo.text.toUpperCase()}
+                {todo.text.charAt(0).toUpperCase() + todo.text.slice(1)}
               </p>
               <button
                 className="text-2xl font-semibold px-2 text-blue-500"
